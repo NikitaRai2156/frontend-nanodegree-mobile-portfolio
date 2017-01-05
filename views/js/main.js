@@ -470,13 +470,8 @@ var resizePizzas = function(size) {
     }
   }
 
-  //changePizzaSizes(size);
-
-  var resizePizzas = function(size) {
-  window.performance.mark("mark_start_resize");
-
-  changeSliderLabel(size);
   changePizzaSizes(size);
+  
   // User Timing API is awesome
   window.performance.mark("mark_end_resize");
   window.performance.measure("measure_pizza_resize", "mark_start_resize", "mark_end_resize");
